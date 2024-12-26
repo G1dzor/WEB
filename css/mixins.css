@@ -1,0 +1,6 @@
+/* міксини (можна додавати при потребі) */
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

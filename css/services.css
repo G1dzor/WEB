@@ -1,0 +1,66 @@
+/* Стилі для секції послуг */
+.services {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.services h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Легка анімація при наведенні */
+}
+
+.service-item h4 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #001f3d;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #555;
+}
+
+.service-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Адаптивність для послуг */
+@media (max-width: 768px) {
+    .service-item {
+        padding: 15px;
+        width: 80%; /* Зменшуємо ширину на малих екранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item h4 {
+        font-size: 1.4em;
+    }
+}
